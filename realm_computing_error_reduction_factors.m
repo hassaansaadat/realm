@@ -14,8 +14,8 @@ q_bits   = 6;
 syms x y c
 
 % defining numerator and denominator of equation (11) of paper
-E_rel(x,y) = piecewise(    x+y<1,  (1+x+y)/(1+x)/(1+y) -1 ,...
-                        x+y>=1, 2*(x+y)/(1+x)/(1+y) -1 )  % Eq (5)
+E_rel(x,y) = piecewise(   x+y<1,  (1+x+y)/(1+x)/(1+y) -1 ,...
+                          x+y>=1, 2*(x+y)/(1+x)/(1+y) -1 )  % Eq (5)
 fden(x,y) =  (1)/(1+x)/(1+y)                               % Eq (11)
 
 for M = [4 8 16]    % compute for 3 values of M
